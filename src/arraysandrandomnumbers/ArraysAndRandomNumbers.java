@@ -46,7 +46,7 @@ public class ArraysAndRandomNumbers {
         System.out.println("4. Exit");
         userInput = input.nextLine();
         
-        //Switch statement to determine whoch calculation the user wants to do
+        //Switch statement to determine which calculation the user wants to do
         switch (userInput) {
             case "1":
                 //Use loops and arrays to calculate the sum of all the numbers
@@ -74,35 +74,36 @@ public class ArraysAndRandomNumbers {
                 System.out.println("Calculating max and min values....");
                 for (int i = 0; i <= 9; i = i + 1)
                 {
-                    if (i == 0) {
-                    max = numbers[i];
+                    if (i == 0) 
+                    {
+                        max = numbers[i];
                     }
-                    if (i != 0) {
-                        if (max < numbers[i]) {
+                    if (i != 0) 
+                    {
+                        if (max < numbers[i]) 
+                        {
                             max = numbers[i];
-                        }
-                        else {
+                        } else {
                         max = max;
                         }
-                        
                     }
                 }
                 
                 
                 for (int i = 0; i <= 9; i = i + 1)
-                {
-                    
-                    if (i == 0) {
+                { 
+                    if (i == 0) 
+                    {
                     min = numbers[i];
                     }
-                    if (i != 0) {
-                        if (min > numbers[i]) {
+                    if (i != 0) 
+                    {
+                        if (min > numbers[i]) 
+                        {
                             min = numbers[i];
-                        }
-                        else {
+                        } else {
                         min = min;
                         }
-                        
                     }
                 }
                 System.out.println("The maximun and minimum values are " + max + " and " + min);
@@ -114,5 +115,4 @@ public class ArraysAndRandomNumbers {
                 break;
         }
     }
-    
 }
